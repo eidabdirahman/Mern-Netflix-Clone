@@ -7,10 +7,10 @@ import Footer from "./components/Footer";
 import { Toaster } from "react-hot-toast";
 import { useEffect } from "react";
 import WatchPage from "./pages/WatchPage";
-import { useauthStore } from "./store/authUser";
 import SearchPage from "./pages/SearchPage";
 import SearchHistoryPage from "./pages/SearchHistoryPage";
 import NotFoundPage from "./pages/404";
+import { useauthStore } from "./store/AuthUser";
 
 function App() {
  const { user, ischeckingAuth, authcheck } = useauthStore();
