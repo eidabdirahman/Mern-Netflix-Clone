@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { LogOut, Menu, Search } from "lucide-react";
-import { useauthStore,  } from '../store/AuthUser';
+import { useauthStore,  } from '../store/';
 import { useContentStore } from '../store/Content';
 
 const Navbar = () => {
