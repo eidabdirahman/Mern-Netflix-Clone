@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { SMALL_BASE_IMAGE_URL } from "../utils/constants";
 import { Trash } from "lucide-react";
 import toast from "react-hot-toast";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/navbar";
 
 function formatDate(dateString) {
 	// Create a Date object from the input date string
@@ -47,7 +47,7 @@ const SearchHistoryPage = () => {
 	if (searchHistory?.length === 0) {
 		return (
 			<div className='bg-black min-h-screen text-white'>
-				<Navbar />
+				<Navbar/>
 				<div className='max-w-6xl mx-auto px-4 py-8'>
 					<h1 className='text-3xl font-bold mb-8'>Search History</h1>
 					<div className='flex justify-center items-center h-96'>
