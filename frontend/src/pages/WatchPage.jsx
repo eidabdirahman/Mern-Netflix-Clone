@@ -3,11 +3,13 @@ import { Link, useParams } from "react-router-dom";
 import axios from "axios";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import ReactPlayer from "react-player";
-import { ORIGINAL_BASE_IMAGE_URL, SMALL_BASE_IMAGE_URL } from "../utils/constants";
+import { 
+	ORIGINAL_BASE_IMAGE_URL, 
+	SMALL_BASE_IMAGE_URL } from "../utils/constants";
 import { formatReleaseDate } from "../utils/dateFunction";
 import WatchPageSkeleton from "../components/skeletons/WatchPageSkeleton";
 import Navbar from "../components/navbar";
-import { useContentStore } from "../store/content";
+import { useContentStore } from '../store/Content';
 
 const WatchPage = () => {
 	const { id } = useParams();

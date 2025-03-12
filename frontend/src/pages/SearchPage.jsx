@@ -5,7 +5,7 @@ import axios from "axios";
 import { ORIGINAL_BASE_IMAGE_URL } from "../utils/constants";
 import { Link } from "react-router-dom";
 import Navbar from '../components/navbar';
-import { useContentStore } from "../store/content";
+import { useContentStore } from '../store/Content';
 
 const SearchPage = () => {
 	const [activeTab, setActiveTab] = useState("movie");
