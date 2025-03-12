@@ -6,8 +6,8 @@ import ReactPlayer from "react-player";
 import { ORIGINAL_BASE_IMAGE_URL, SMALL_BASE_IMAGE_URL } from "../utils/constants";
 import { formatReleaseDate } from "../utils/dateFunction";
 import WatchPageSkeleton from "../components/skeletons/WatchPageSkeleton";
-import { useContentStore } from "../store/content";
 import Navbar from "../components/navbar";
+import { useContentStore } from "../store/content";
 
 const WatchPage = () => {
 	const { id } = useParams();
