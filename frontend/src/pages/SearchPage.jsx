@@ -4,8 +4,8 @@ import toast from "react-hot-toast";
 import axios from "axios";
 import { ORIGINAL_BASE_IMAGE_URL } from "../utils/constants";
 import { Link } from "react-router-dom";
-import { useContentStore } from "../store/content";
 import Navbar from '../components/navbar';
+import { useContentStore } from "../store/content";
 
 const SearchPage = () => {
 	const [activeTab, setActiveTab] = useState("movie");
