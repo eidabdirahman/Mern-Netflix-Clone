@@ -1,13 +1,13 @@
 import { useEffect, useRef, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import axios from "axios";
-import Navbar from "../components/Navbar";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import ReactPlayer from "react-player";
 import { ORIGINAL_BASE_IMAGE_URL, SMALL_BASE_IMAGE_URL } from "../utils/constants";
 import { formatReleaseDate } from "../utils/dateFunction";
 import WatchPageSkeleton from "../components/skeletons/WatchPageSkeleton";
 import { useContentStore } from "../store/content";
+import Navbar from "../components/navbar";
 
 const WatchPage = () => {
 	const { id } = useParams();
@@ -92,7 +92,7 @@ const WatchPage = () => {
 		return (
 			<div className='bg-black text-white h-screen'>
 				<div className='max-w-6xl mx-auto'>
-					<Navbar />
+					<Navbar/>
 					<div className='text-center mx-auto px-4 py-8 h-full mt-40'>
 						<h2 className='text-2xl sm:text-5xl font-bold text-balance'>Content not found 😥</h2>
 					</div>
