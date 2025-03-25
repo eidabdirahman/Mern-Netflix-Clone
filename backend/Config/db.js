@@ -1,6 +1,6 @@
 import chalk from "chalk";
 import mongoose from "mongoose";
-import { envVars } from "./envVars.js";
+import {envVars} from "./envVars.js"; 
 
 export const connectDB = async () => {
     try {
